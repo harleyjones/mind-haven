@@ -78,6 +78,11 @@ h3 {
 #about {
     text-align: center;
 }
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
 /* Media Queries */
 
 /* xs devices (up to 320px) */
