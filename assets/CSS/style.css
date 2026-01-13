@@ -7,8 +7,8 @@
     --font-secondary: "hepta slab", serif;
     --color-primary: #2f591b; /* Dark Green */
     --color-secondary: #a3c293; /* Green */
-    --color-highlight: #b4212d; /* Red */
-    --color-highlight-light: #ec484a; /* Light Red */
+    --color-highlight: #5e321c; /* Brown */
+    --color-highlight-light: #bfa28e; /* Light Brown */
 }
 
 /* Global Styles */
@@ -30,4 +30,16 @@ h3 {
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--color-primary);
+}
+
+#logo {
+    color: var(--color-highlight-light);
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
 }
