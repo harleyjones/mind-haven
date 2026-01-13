@@ -71,6 +71,13 @@ h3 {
     margin-bottom: 10px;
     color: var(--color-highlight);
 }
+
+/* Main Content */
+
+/* About Section */
+#about {
+    text-align: center;
+}
 /* Media Queries */
 
 /* xs devices (up to 320px) */
