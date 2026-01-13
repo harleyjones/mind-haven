@@ -10,3 +10,24 @@
     --color-highlight: #b4212d; /* Red */
     --color-highlight-light: #ec484a; /* Light Red */
 }
+
+/* Global Styles */
+body {
+    font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+}
+
+.sub-heading-color {
+    color: var(--color-highlight);
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
