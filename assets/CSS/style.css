@@ -15,6 +15,7 @@
 body {
     font-family: var(--font-primary);
     background-color: #edeae0; /* Light Beige Background */
+    padding-top: 56px;
 }
 
 h1,
@@ -30,8 +31,7 @@ h3 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 4rem;
 }
 
 /* Navigation Bar */
@@ -103,6 +103,7 @@ h3 {
     color: var(--color-highlight);
     margin-top: 5px;
     margin-bottom: 5px;
+    min-width: 244px;
 }
 
 .custom-button-outline:hover {

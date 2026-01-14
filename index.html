@@ -31,7 +31,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a id="logo" class="navbar-brand" href="index.html">
                 <em>Mind Haven</em>
@@ -65,7 +65,7 @@
 
     <!-- Header -->
     <header>
-        <div id="hero">
+        <div id="hero" fetchpriority="high">
             <div id="cover-text">
                 <h1>Welcome to Mind Haven</h1>
                 <p>Your sanctuary for mental wellness</p>
@@ -74,9 +74,9 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container section">
+    <main class="container">
         <!-- About Section -->
-        <section>
+        <section id="about" class="section">
             <div class="row">
                 <div class="col-12 col-xl-6">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -106,7 +106,7 @@
                         </button>
                     </div>
                 </div>
-                <div id="about" class="col-12 col-xl-6 text-center text-xl-start">
+                <div class="col-12 col-xl-6 text-center text-xl-start">
                     <h2 class="my-4 sub-heading-color">About us!</h2>
                     <p class="my-4">MindHaven is a workplace wellbeing initiative dedicated to creating healthier, more
                         compassionate professional environments. We believe that when people feel understood and
@@ -121,6 +121,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Tips Section -->
         <section id="tips" class="container section">
             <div class="row">
@@ -208,7 +209,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-auto">
+    <footer class="mt-auto section">
         <div id="contact">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
@@ -250,7 +251,27 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/6c5ac60dda.js" crossorigin="anonymous"></script>
-</body>
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
