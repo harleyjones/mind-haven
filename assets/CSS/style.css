@@ -91,6 +91,8 @@ h3 {
 }
 
 #tips .card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -131,6 +133,8 @@ h3 {
 #contact .social-links i {
     color: var(--color-highlight-light);
     font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
