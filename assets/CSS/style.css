@@ -97,6 +97,8 @@ h3 {
     border: 3px solid var(--color-highlight);
     padding: 7px 25px;
     color: var(--color-highlight);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .custom-button-outline:hover {
