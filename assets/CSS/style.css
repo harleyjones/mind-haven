@@ -85,6 +85,36 @@ h3 {
 }
 
 /* Tips Section */
+#tips .card {
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+#contact {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact i {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+#contact .social-links i {
+    color: var(--color-highlight-light);
+    font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--color-secondary);
+}
 
 /* Media Queries */
 
@@ -106,5 +136,34 @@ h3 {
     #cover-text {
         width: 400px;
         right: 50px;
+    }
+    #tips .card-body {
+        min-height: 191px;
+    }
+
+    .feet {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    #services .card-body {
+        min-height: 195px;
     }
 }
