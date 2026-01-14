@@ -14,6 +14,7 @@
 /* Global Styles */
 body {
     font-family: var(--font-primary);
+    background-color: #edeae0; /* Light Beige Background */
 }
 
 h1,
@@ -87,6 +88,20 @@ h3 {
 /* Tips Section */
 #tips .card {
     margin-bottom: 1.5rem;
+}
+
+/* Resources Section */
+
+/* Buttons */
+.custom-button-outline {
+    border: 3px solid var(--color-highlight);
+    padding: 7px 25px;
+    color: var(--color-highlight);
+}
+
+.custom-button-outline:hover {
+    background-color: var(--color-highlight);
+    color: white;
 }
 
 /* Footer */
