@@ -85,6 +85,11 @@ h3 {
     line-height: 1.6;
 }
 
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
 /* Tips Section */
 #tips .card {
     margin-bottom: 1.5rem;
@@ -94,6 +99,11 @@ h3 {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+#tips .card-image-top {
+    height: 200px;
+    object-fit: cover;
 }
 
 /* Resources Section */
